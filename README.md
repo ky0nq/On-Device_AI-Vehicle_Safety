@@ -119,17 +119,6 @@ Final Accuracy는 YOLO11s가 가장 높았지만, 7세 이하 아동을 놓치�
 |---|---|
 | <img src="docs/confusion_before.png" alt="Confusion Matrix before fine-tuning" width="100%"> | <img src="docs/confusion_finetuned.png" alt="Confusion Matrix after fine-tuning" width="100%"> |
 
-**YOLO11 단독 Latency (초기 안정화 프레임 제외)**
-
-| Model | Median | P95 | P95 − Median |
-|---|---:|---:|---:|
-| YOLO11n | 28.6 ms | 39.5 ms | 10.9 ms |
-| YOLO11s | 29.4 ms | 30.2 ms | 0.8 ms |
-| YOLO11m | 44.7 ms | 44.8 ms | 0.1 ms |
-
-YOLO11n은 최소 Latency는 가장 짧지만 간헐적인 spike가 많아, 전체 Latency는 YOLO11s와 비슷했습니다.
-모델 연산량이 커질수록 GPU 연산 비중이 늘어 시스템 오버헤드의 상대적 영향이 줄어든 것으로 추정되며, GPU clock · utilization 기록을 통한 추가 검증이 필요합니다.
-
 ## 3. Vehicle Security Camera
 
 차량 접근 인물을 얼굴 검출(YuNet) → Anti-Spoofing(MiniFASNetV2) → 얼굴 인식(SFace) 순서로 분석해 OWNER / GUEST / UNKNOWN / SPOOF로 판별합니다. 오른쪽은 사용자 등록 흐름(Guest는 최대 5명, 초과 시 가장 오래된 Guest 삭제)입니다.
