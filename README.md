@@ -8,7 +8,7 @@ Jetson Orin Nano에서 동작하는 **On-Device AI 기반 차량 통합 안전 �
 |---|---|
 | 기간 | 2026.08.05 ~ 2026.08.19 |
 | 형태 | 3인 팀 |
-| 담당 | 1열 졸음 감지 모델(ResNet18 · MobileNetV2 · MobileViT-XXS) 학습 · 시연 / 2열 MiVOLO GPU 실행 환경 · E2E Latency · FPS 분석 / 차량 보안카메라(YuNet · MiniFASNetV2 · SFace) · Web UI 구현 |
+| 담당 | 1열 졸음 감지 모델(ResNet18 · MobileNetV2 · MobileViT-XXS) 학습 · 시연 영상 제작 / 2열 MiVOLO GPU 실행 환경 · E2E Latency · FPS 분석 / 차량 보안카메라(YuNet · MiniFASNetV2 · SFace) · Web UI 구현 · 시연 영상 제작 · 시연 |
 | 플랫폼 | NVIDIA Jetson Orin Nano · JetPack 6.2.2 · CUDA 12.6 · TensorRT |
 
 ## 핵심 결과
